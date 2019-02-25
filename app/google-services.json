@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "169933568809",
+    "firebase_url": "https://arvandtechapp-2763f.firebaseio.com",
+    "project_id": "arvandtechapp-2763f",
+    "storage_bucket": "arvandtechapp-2763f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169933568809:android:60d5944b203aa423",
+        "android_client_info": {
+          "package_name": "com.arvandtechapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169933568809-m3n66r8lbi7m8cap8merramdhpl7j8tt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC47XsT27XRuD-dYOHy5KBNccs7TOsuq9k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
