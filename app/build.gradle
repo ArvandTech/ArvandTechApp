@@ -34,12 +34,13 @@ dependencies {
     implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
 
     implementation 'com.amazonaws:aws-android-sdk-s3:2.12.+'
-    implementation ('com.amazonaws:aws-android-sdk-mobile-client:2.12.+@aar') { transitive = true }
-    implementation ('com.amazonaws:aws-android-sdk-auth-userpools:2.12.+@aar') { transitive = true }
+    implementation('com.amazonaws:aws-android-sdk-mobile-client:2.12.+@aar') { transitive = true }
+    implementation('com.amazonaws:aws-android-sdk-auth-userpools:2.12.+@aar') { transitive = true }
     //Fix for AWS incompatible dependency error
     implementation "android.arch.core:runtime:1.1.1"
     implementation "android.arch.core:common:1.1.1"
 
+    //FireBase
     implementation 'com.google.firebase:firebase-core:16.0.1'
 }
 

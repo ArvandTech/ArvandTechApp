@@ -1,10 +1,12 @@
-package com.arvandtechapp;
+package com.arvandtechapp.Account;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.support.v7.app.AppCompatActivity;
+
+import com.arvandtechapp.R;
 
 
 public class LoginActivity extends AppCompatActivity {
