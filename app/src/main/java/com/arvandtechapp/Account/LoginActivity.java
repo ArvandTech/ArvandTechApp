@@ -43,20 +43,22 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        //Get Firebase auth instance
-        auth = FirebaseAuth.getInstance();
-
-        if (auth.getCurrentUser() != null) {
-            //startActivity(new Intent(LoginActivity.this, MainActivity.class));
-            finish();
-        }
-
-        setContentView(R.layout.activity_login);
-
         rellay1 = (RelativeLayout) findViewById(R.id.rellay1);
         rellay2 = (RelativeLayout) findViewById(R.id.rellay2);
 
         handler.postDelayed(runnable, 1200);
+
+        //Get Firebase auth instance
+        auth = FirebaseAuth.getInstance();
+
+        /**if (auth.getCurrentUser() != null) {
+            //startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            finish();
+        }*/
+
+        //setContentView(R.layout.activity_login);
+
+
 
         inputEmail = (EditText) findViewById(R.id.EmailSignIn);
         inputPassword = (EditText) findViewById(R.id.PasswordSignIn);
