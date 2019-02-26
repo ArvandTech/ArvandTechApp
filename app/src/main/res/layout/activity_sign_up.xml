@@ -94,7 +94,7 @@
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:id="@+id/usernamesignup"
+                        android:id="@+id/UsernameSignUp"
                         android:layout_height="40dp"
                         android:layout_marginTop="5dp"
                         android:background="@drawable/edit_text_style"
@@ -134,7 +134,8 @@
                         android:paddingRight="15dp"
                         android:textColor="@color/black"
                         android:textSize="15sp"
-                        android:hint="Password"/>
+                        android:hint="Password"
+                        android:inputType="textPassword"/>
 
                 </LinearLayout>
 
@@ -165,7 +166,8 @@
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
                         android:textColor="@color/black"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:inputType="textPassword"/>
 
                 </LinearLayout>
             </LinearLayout>

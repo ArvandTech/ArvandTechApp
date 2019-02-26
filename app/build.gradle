@@ -41,7 +41,9 @@ dependencies {
     implementation "android.arch.core:common:1.1.1"
 
     //FireBase
-    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation 'com.google.firebase:firebase-auth:16.1.0'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
 }
 
 apply plugin: 'com.google.gms.google-services'
