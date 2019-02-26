@@ -62,7 +62,7 @@
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:id="@+id/emailsignup"
+                        android:id="@+id/EmailSignUp"
                         android:layout_height="40dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
@@ -126,7 +126,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:id="@+id/passwordsignup"
+                        android:id="@+id/PasswordSignUp"
                         android:layout_marginTop="5dp"
                         android:background="@drawable/edit_text_style"
                         android:fontFamily="sans-serif-light"
@@ -186,7 +186,17 @@
                 android:text="Sign Up"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:visibility="visible"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/LoginProgressSignUp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/line1"
+                android:visibility="gone"/>
 
         </RelativeLayout>
 

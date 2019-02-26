@@ -1,5 +1,6 @@
 package com.arvandtechapp.Account;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -34,15 +35,28 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //Get Firebase auth instance
+        auth = FirebaseAuth.getInstance();
+
+        if (auth.getCurrentUser() != null) {
+            //startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            finish();
+        }
+
         setContentView(R.layout.activity_main);
 
         rellay1 = (RelativeLayout) findViewById(R.id.rellay1);
         rellay2 = (RelativeLayout) findViewById(R.id.rellay2);
 
-        handler.postDelayed(runnable, 2000);
+        handler.postDelayed(runnable, 1200);
 
-
-
+        inputEmail = (EditText) findViewById(R.id.EmailSignIn);
+        inputPassword = (EditText) findViewById(R.id.PasswordSignIn);
+        progressBar = (ProgressBar) findViewById(R.id.LoginProgressSignIn);
+        btnSignUp = (Button) findViewById(R.id.SignUpSignIn);
+        btnSignIn = (Button) findViewById(R.id.LoginButtonSignIn);
+        btnResetPassword = (Button) findViewById(R.id.ForgotPassSignIn);
     }
 
 }

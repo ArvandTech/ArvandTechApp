@@ -33,27 +33,27 @@ public class SignUpActivity extends AppCompatActivity {
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
 
-        btnSignIn = (Button) findViewById(R.id.LoginButtonSignIn);
-        btnSignUp = (Button) findViewById(R.id.SignUpSignIn);
-        inputEmail = (EditText) findViewById(R.id.EmailSignIn);
-        inputPassword = (EditText) findViewById(R.id.PasswordSignIn);
-        progressBar = (ProgressBar) findViewById(R.id.LoginProgressSignIn);
-        btnResetPassword = (Button) findViewById(R.id.ForgotPassSignIn);
+        //btnSignIn = (Button) findViewById(R.id.);
+        btnSignUp = (Button) findViewById(R.id.SignUpSignUp);
+        inputEmail = (EditText) findViewById(R.id.EmailSignUp);
+        inputPassword = (EditText) findViewById(R.id.PasswordSignUp);
+        progressBar = (ProgressBar) findViewById(R.id.LoginProgressSignUp);
+        //btnResetPassword = (Button) findViewById(R.id.ForgotPassSignIn);
 
 
-        btnResetPassword.setOnClickListener(new View.OnClickListener() {
+        /**btnResetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SignUpActivity.this, ResetPasswordActivity.class));
             }
-        });
+        });*/
 
-        btnSignIn.setOnClickListener(new View.OnClickListener() {
+        /**btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
-        });
+        });*/
 
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
@@ -78,7 +78,7 @@ public class SignUpActivity extends AppCompatActivity {
                     return;
                 }
 
-                btnSignIn.setVisibility(View.GONE);
+                btnSignUp.setVisibility(View.GONE);
                 progressBar.setVisibility(View.VISIBLE);
                 //create user
                 auth.createUserWithEmailAndPassword(email, password)
@@ -87,7 +87,7 @@ public class SignUpActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 Toast.makeText(SignUpActivity.this, "createUserWithEmail:onComplete:" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
                                 progressBar.setVisibility(View.GONE);
-                                btnSignIn.setVisibility(View.VISIBLE);
+                                btnSignUp.setVisibility(View.VISIBLE);
                                 // If sign in fails, display a message to the user. If sign in succeeds
                                 // the auth state listener will be notified and logic to handle the
                                 // signed in user can be handled in the listener.
@@ -110,6 +110,6 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         progressBar.setVisibility(View.GONE);
-        btnSignIn.setVisibility(View.VISIBLE);
+        btnSignUp.setVisibility(View.VISIBLE);
     }
 }
