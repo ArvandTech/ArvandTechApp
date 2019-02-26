@@ -135,6 +135,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/SignUpSignIn"
             android:background="@color/transparent"
             android:fontFamily="sans-serif"
             android:text="Sign Up"
@@ -144,10 +145,12 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/ForgotPassSignIn"
             android:layout_alignParentRight="true"
             android:background="@color/transparent"
             android:fontFamily="sans-serif"
-            android:text="Forget Password"
+            android:text="Forget\nPassword"
+            android:layout_marginBottom="7dp"
             android:textAllCaps="true"
             android:textColor="@color/white" />
 
