@@ -70,7 +70,8 @@
                         android:paddingRight="15dp"
                         android:textColor= "@color/black"
                         android:textSize="15sp"
-                        android:id="@+id/EmailSignIn"/>
+                        android:id="@+id/EmailSignIn"
+                        android:textCursorDrawable="@null"/>
 
                 </LinearLayout>
 
@@ -100,7 +101,8 @@
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         android:inputType="textPassword"
-                        android:id="@+id/PasswordSignIn"/>
+                        android:id="@+id/PasswordSignIn"
+                        android:textCursorDrawable="@null"/>
 
                 </LinearLayout>
             </LinearLayout>

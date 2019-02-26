@@ -72,7 +72,8 @@
                         android:paddingRight="15dp"
                         android:textColor= "@color/black"
                         android:textSize="15sp"
-                        android:hint="Email"/>
+                        android:hint="Email"
+                        android:textCursorDrawable="@null"/>
 
                 </LinearLayout>
 
@@ -103,7 +104,8 @@
                         android:paddingRight="15dp"
                         android:textColor= "@color/black"
                         android:textSize="15sp"
-                        android:hint="Choose Username"/>
+                        android:hint="Choose Username"
+                        android:textCursorDrawable="@null"/>
 
                 </LinearLayout>
 
@@ -135,7 +137,8 @@
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         android:hint="Password"
-                        android:inputType="textPassword"/>
+                        android:inputType="textPassword"
+                        android:textCursorDrawable="@null"/>
 
                 </LinearLayout>
 
@@ -167,7 +170,8 @@
                         android:paddingRight="15dp"
                         android:textColor="@color/black"
                         android:textSize="15sp"
-                        android:inputType="textPassword"/>
+                        android:inputType="textPassword"
+                        android:textCursorDrawable="@null"/>
 
                 </LinearLayout>
             </LinearLayout>
